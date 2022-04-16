@@ -1,0 +1,866 @@
+4.17.0
+Using custom data configuration default
+Reusing dataset xsum (C:\Users\mishr\.cache\huggingface\datasets\xsum\default\1.2.0\32c23220eadddb1149b16ed2e9430a05293768cfffbdfd151058697d4c11f934)
+100%|██████████| 3/3 [00:00<00:00, 80.06it/s]
+DatasetDict({
+    train: Dataset({
+        features: ['document', 'summary', 'id'],
+        num_rows: 204045
+    })
+    validation: Dataset({
+        features: ['document', 'summary', 'id'],
+        num_rows: 11332
+    })
+    test: Dataset({
+        features: ['document', 'summary', 'id'],
+        num_rows: 11334
+    })
+})
+Loading cached processed dataset at C:\Users\mishr\.cache\huggingface\datasets\xsum\default\1.2.0\32c23220eadddb1149b16ed2e9430a05293768cfffbdfd151058697d4c11f934\cache-3b5f22899b7915a3.arrow
+Loading cached processed dataset at C:\Users\mishr\.cache\huggingface\datasets\xsum\default\1.2.0\32c23220eadddb1149b16ed2e9430a05293768cfffbdfd151058697d4c11f934\cache-8ff3375eef38f280.arrow
+Loading cached processed dataset at C:\Users\mishr\.cache\huggingface\datasets\xsum\default\1.2.0\32c23220eadddb1149b16ed2e9430a05293768cfffbdfd151058697d4c11f934\cache-802327cc9600dbf6.arrow
+Using amp half precision backend
+The following columns in the training set  don't have a corresponding argument in `T5ForConditionalGeneration.forward` and have been ignored: id, document, summary. If id, document, summary are not expected by `T5ForConditionalGeneration.forward`,  you can safely ignore this message.
+C:\Users\mishr\anaconda3\envs\new\lib\site-packages\transformers\optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+***** Running training *****
+  Num examples = 204045
+  Num Epochs = 1
+  Instantaneous batch size per device = 4
+  Total train batch size (w. parallel, distributed & accumulation) = 4
+  Gradient Accumulation steps = 1
+  Total optimization steps = 51012
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+wandb: Currently logged in as: harshm16 (use `wandb login --relogin` to force relogin)
+wandb version 0.12.14 is available! To upgrade, please run: $ pip install wandb --upgrade
+Tracking run with wandb version 0.12.11
+Run data is saved locally in c:\Users\mishr\Desktop\NLP_project\finetune\wandb\run-20220415_152403-1qqkw1hy
+Syncing run t5-small-finetuned-xsum to Weights & Biases (docs)
+  1%|          | 500/51012 [01:20<2:40:40,  5.24it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-500\config.json
+{'loss': 3.1445, 'learning_rate': 1.9805143887712696e-05, 'epoch': 0.01}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-500\spiece.model
+  2%|▏         | 1000/51012 [02:41<3:07:43,  4.44it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-1000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-1000\config.json
+{'loss': 2.9432, 'learning_rate': 1.9609111581588646e-05, 'epoch': 0.02}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-1000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-1000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-1000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-1000\spiece.model
+  3%|▎         | 1500/51012 [04:03<2:14:14,  6.15it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-1500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-1500\config.json
+{'loss': 2.8888, 'learning_rate': 1.94130792754646e-05, 'epoch': 0.03}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-1500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-1500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-1500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-1500\spiece.model
+  4%|▍         | 2000/51012 [05:23<3:01:45,  4.49it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-2000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-2000\config.json
+{'loss': 2.8724, 'learning_rate': 1.921704696934055e-05, 'epoch': 0.04}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-2000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-2000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-2000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-2000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-500] due to args.save_total_limit
+  5%|▍         | 2500/51012 [06:46<3:09:07,  4.28it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-2500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-2500\config.json
+{'loss': 2.8477, 'learning_rate': 1.9021406727828747e-05, 'epoch': 0.05}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-2500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-2500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-2500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-2500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-1000] due to args.save_total_limit
+  6%|▌         | 3000/51012 [08:09<2:29:14,  5.36it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-3000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-3000\config.json
+{'loss': 2.8205, 'learning_rate': 1.882576648631695e-05, 'epoch': 0.06}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-3000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-3000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-3000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-3000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-1500] due to args.save_total_limit
+  7%|▋         | 3500/51012 [09:30<2:43:53,  4.83it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-3500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-3500\config.json
+{'loss': 2.8353, 'learning_rate': 1.86297341801929e-05, 'epoch': 0.07}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-3500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-3500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-3500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-3500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-2000] due to args.save_total_limit
+  8%|▊         | 4000/51012 [10:52<2:19:52,  5.60it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-4000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-4000\config.json
+{'loss': 2.8158, 'learning_rate': 1.843370187406885e-05, 'epoch': 0.08}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-4000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-4000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-4000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-4000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-2500] due to args.save_total_limit
+  9%|▉         | 4500/51012 [12:13<2:45:43,  4.68it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-4500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-4500\config.json
+{'loss': 2.7886, 'learning_rate': 1.82376695679448e-05, 'epoch': 0.09}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-4500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-4500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-4500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-4500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-3000] due to args.save_total_limit
+ 10%|▉         | 5000/51012 [13:34<2:39:22,  4.81it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-5000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-5000\config.json
+{'loss': 2.8096, 'learning_rate': 1.8041637261820752e-05, 'epoch': 0.1}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-5000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-5000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-5000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-5000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-3500] due to args.save_total_limit
+ 11%|█         | 5500/51012 [14:57<2:35:11,  4.89it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-5500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-5500\config.json
+{'loss': 2.7936, 'learning_rate': 1.7845604955696702e-05, 'epoch': 0.11}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-5500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-5500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-5500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-5500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-4000] due to args.save_total_limit
+ 12%|█▏        | 6000/51012 [16:19<2:22:49,  5.25it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-6000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-6000\config.json
+{'loss': 2.792, 'learning_rate': 1.764957264957265e-05, 'epoch': 0.12}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-6000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-6000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-6000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-6000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-4500] due to args.save_total_limit
+ 13%|█▎        | 6500/51012 [17:42<2:24:15,  5.14it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-6500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-6500\config.json
+{'loss': 2.7759, 'learning_rate': 1.74535403434486e-05, 'epoch': 0.13}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-6500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-6500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-6500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-6500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-5000] due to args.save_total_limit
+ 14%|█▎        | 7000/51012 [19:05<2:26:22,  5.01it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-7000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-7000\config.json
+{'loss': 2.7694, 'learning_rate': 1.725750803732455e-05, 'epoch': 0.14}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-7000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-7000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-7000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-7000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-5500] due to args.save_total_limit
+ 15%|█▍        | 7500/51012 [20:26<2:12:01,  5.49it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-7500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-7500\config.json
+{'loss': 2.7738, 'learning_rate': 1.70614757312005e-05, 'epoch': 0.15}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-7500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-7500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-7500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-7500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-6000] due to args.save_total_limit
+ 16%|█▌        | 8000/51012 [21:47<2:07:46,  5.61it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-8000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-8000\config.json
+{'loss': 2.7733, 'learning_rate': 1.6865835489688703e-05, 'epoch': 0.16}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-8000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-8000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-8000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-8000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-6500] due to args.save_total_limit
+ 17%|█▋        | 8500/51012 [23:10<2:22:56,  4.96it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-8500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-8500\config.json
+{'loss': 2.7369, 'learning_rate': 1.6669803183564653e-05, 'epoch': 0.17}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-8500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-8500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-8500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-8500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-7000] due to args.save_total_limit
+ 18%|█▊        | 9000/51012 [24:31<2:21:00,  4.97it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-9000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-9000\config.json
+{'loss': 2.7594, 'learning_rate': 1.647416294205285e-05, 'epoch': 0.18}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-9000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-9000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-9000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-9000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-7500] due to args.save_total_limit
+ 19%|█▊        | 9500/51012 [25:52<2:32:42,  4.53it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-9500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-9500\config.json
+{'loss': 2.7684, 'learning_rate': 1.62781306359288e-05, 'epoch': 0.19}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-9500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-9500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-9500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-9500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-8000] due to args.save_total_limit
+ 20%|█▉        | 10000/51012 [27:14<1:58:06,  5.79it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-10000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-10000\config.json
+{'loss': 2.7613, 'learning_rate': 1.6082098329804754e-05, 'epoch': 0.2}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-10000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-10000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-10000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-10000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-8500] due to args.save_total_limit
+ 21%|██        | 10500/51012 [28:38<2:20:05,  4.82it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-10500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-10500\config.json
+{'loss': 2.7546, 'learning_rate': 1.5886066023680704e-05, 'epoch': 0.21}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-10500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-10500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-10500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-10500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-9000] due to args.save_total_limit
+ 22%|██▏       | 11000/51012 [29:59<2:05:39,  5.31it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-11000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-11000\config.json
+{'loss': 2.7196, 'learning_rate': 1.5690033717556654e-05, 'epoch': 0.22}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-11000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-11000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-11000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-11000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-9500] due to args.save_total_limit
+ 23%|██▎       | 11500/51012 [31:20<2:23:31,  4.59it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-11500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-11500\config.json
+{'loss': 2.7437, 'learning_rate': 1.5494001411432604e-05, 'epoch': 0.23}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-11500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-11500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-11500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-11500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-10000] due to args.save_total_limit
+ 24%|██▎       | 12000/51012 [32:41<2:18:51,  4.68it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-12000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-12000\config.json
+{'loss': 2.7401, 'learning_rate': 1.5297969105308557e-05, 'epoch': 0.24}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-12000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-12000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-12000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-12000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-10500] due to args.save_total_limit
+ 25%|██▍       | 12500/51012 [34:01<2:26:14,  4.39it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-12500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-12500\config.json
+{'loss': 2.7456, 'learning_rate': 1.5101936799184507e-05, 'epoch': 0.25}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-12500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-12500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-12500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-12500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-11000] due to args.save_total_limit
+ 25%|██▌       | 13000/51012 [35:21<2:07:27,  4.97it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-13000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-13000\config.json
+{'loss': 2.7322, 'learning_rate': 1.4906296557672705e-05, 'epoch': 0.25}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-13000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-13000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-13000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-13000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-11500] due to args.save_total_limit
+ 26%|██▋       | 13500/51012 [36:42<1:40:19,  6.23it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-13500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-13500\config.json
+{'loss': 2.7296, 'learning_rate': 1.4710264251548657e-05, 'epoch': 0.26}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-13500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-13500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-13500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-13500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-12000] due to args.save_total_limit
+ 27%|██▋       | 14000/51012 [38:03<1:53:34,  5.43it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-14000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-14000\config.json
+{'loss': 2.7068, 'learning_rate': 1.4514231945424607e-05, 'epoch': 0.27}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-14000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-14000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-14000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-14000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-12500] due to args.save_total_limit
+ 28%|██▊       | 14500/51012 [39:24<1:42:55,  5.91it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-14500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-14500\config.json
+{'loss': 2.7228, 'learning_rate': 1.4318199639300558e-05, 'epoch': 0.28}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-14500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-14500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-14500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-14500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-13000] due to args.save_total_limit
+ 29%|██▉       | 15000/51012 [40:46<2:01:38,  4.93it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-15000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-15000\config.json
+{'loss': 2.7458, 'learning_rate': 1.4122559397788758e-05, 'epoch': 0.29}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-15000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-15000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-15000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-15000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-13500] due to args.save_total_limit
+ 30%|███       | 15500/51012 [42:06<1:38:59,  5.98it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-15500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-15500\config.json
+{'loss': 2.7435, 'learning_rate': 1.3926919156276954e-05, 'epoch': 0.3}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-15500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-15500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-15500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-15500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-14000] due to args.save_total_limit
+ 31%|███▏      | 16000/51012 [43:28<1:42:40,  5.68it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-16000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-16000\config.json
+{'loss': 2.7063, 'learning_rate': 1.3730886850152908e-05, 'epoch': 0.31}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-16000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-16000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-16000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-16000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-14500] due to args.save_total_limit
+ 32%|███▏      | 16500/51012 [44:47<1:57:22,  4.90it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-16500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-16500\config.json
+{'loss': 2.7258, 'learning_rate': 1.3534854544028858e-05, 'epoch': 0.32}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-16500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-16500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-16500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-16500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-15000] due to args.save_total_limit
+ 33%|███▎      | 17000/51012 [46:08<2:02:43,  4.62it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-17000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-17000\config.json
+{'loss': 2.7266, 'learning_rate': 1.3338822237904808e-05, 'epoch': 0.33}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-17000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-17000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-17000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-17000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-15500] due to args.save_total_limit
+ 34%|███▍      | 17500/51012 [47:30<1:59:54,  4.66it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-17500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-17500\config.json
+{'loss': 2.7273, 'learning_rate': 1.314278993178076e-05, 'epoch': 0.34}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-17500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-17500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-17500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-17500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-16000] due to args.save_total_limit
+ 35%|███▌      | 18000/51012 [48:50<1:48:44,  5.06it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-18000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-18000\config.json
+{'loss': 2.6995, 'learning_rate': 1.2946757625656709e-05, 'epoch': 0.35}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-18000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-18000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-18000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-18000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-16500] due to args.save_total_limit
+ 36%|███▋      | 18500/51012 [50:11<1:54:53,  4.72it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-18500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-18500\config.json
+{'loss': 2.6927, 'learning_rate': 1.2750725319532659e-05, 'epoch': 0.36}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-18500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-18500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-18500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-18500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-17000] due to args.save_total_limit
+ 37%|███▋      | 19000/51012 [51:31<1:28:30,  6.03it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-19000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-19000\config.json
+{'loss': 2.7046, 'learning_rate': 1.2555085078020859e-05, 'epoch': 0.37}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-19000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-19000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-19000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-19000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-17500] due to args.save_total_limit
+ 38%|███▊      | 19500/51012 [52:53<1:44:03,  5.05it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-19500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-19500\config.json
+{'loss': 2.6833, 'learning_rate': 1.2359052771896809e-05, 'epoch': 0.38}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-19500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-19500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-19500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-19500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-18000] due to args.save_total_limit
+ 39%|███▉      | 20000/51012 [54:14<1:47:12,  4.82it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-20000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-20000\config.json
+{'loss': 2.715, 'learning_rate': 1.2163020465772762e-05, 'epoch': 0.39}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-20000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-20000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-20000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-20000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-18500] due to args.save_total_limit
+ 40%|████      | 20500/51012 [55:35<1:50:58,  4.58it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-20500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-20500\config.json
+{'loss': 2.688, 'learning_rate': 1.1966988159648712e-05, 'epoch': 0.4}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-20500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-20500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-20500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-20500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-19000] due to args.save_total_limit
+ 41%|████      | 21000/51012 [56:56<1:35:58,  5.21it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-21000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-21000\config.json
+{'loss': 2.6725, 'learning_rate': 1.1770955853524662e-05, 'epoch': 0.41}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-21000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-21000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-21000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-21000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-19500] due to args.save_total_limit
+ 42%|████▏     | 21500/51012 [58:17<1:28:20,  5.57it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-21500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-21500\config.json
+{'loss': 2.6874, 'learning_rate': 1.1574923547400612e-05, 'epoch': 0.42}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-21500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-21500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-21500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-21500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-20000] due to args.save_total_limit
+ 43%|████▎     | 22000/51012 [59:35<1:26:57,  5.56it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-22000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-22000\config.json
+{'loss': 2.701, 'learning_rate': 1.1378891241276563e-05, 'epoch': 0.43}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-22000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-22000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-22000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-22000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-20500] due to args.save_total_limit
+ 44%|████▍     | 22500/51012 [1:00:55<1:44:17,  4.56it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-22500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-22500\config.json
+{'loss': 2.7114, 'learning_rate': 1.1182858935152513e-05, 'epoch': 0.44}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-22500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-22500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-22500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-22500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-21000] due to args.save_total_limit
+ 45%|████▌     | 23000/51012 [1:02:17<1:31:56,  5.08it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-23000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-23000\config.json
+{'loss': 2.6795, 'learning_rate': 1.0986826629028465e-05, 'epoch': 0.45}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-23000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-23000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-23000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-23000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-21500] due to args.save_total_limit
+ 46%|████▌     | 23500/51012 [1:03:41<1:38:26,  4.66it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-23500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-23500\config.json
+{'loss': 2.6922, 'learning_rate': 1.0791186387516663e-05, 'epoch': 0.46}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-23500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-23500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-23500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-23500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-22000] due to args.save_total_limit
+ 47%|████▋     | 24000/51012 [1:05:03<1:19:01,  5.70it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-24000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-24000\config.json
+{'loss': 2.683, 'learning_rate': 1.0595546146004863e-05, 'epoch': 0.47}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-24000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-24000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-24000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-24000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-22500] due to args.save_total_limit
+ 48%|████▊     | 24500/51012 [1:06:27<1:33:19,  4.74it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-24500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-24500\config.json
+{'loss': 2.7051, 'learning_rate': 1.0399513839880813e-05, 'epoch': 0.48}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-24500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-24500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-24500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-24500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-23000] due to args.save_total_limit
+ 49%|████▉     | 25000/51012 [1:07:51<1:31:44,  4.73it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-25000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-25000\config.json
+{'loss': 2.6514, 'learning_rate': 1.0203873598369012e-05, 'epoch': 0.49}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-25000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-25000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-25000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-25000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-23500] due to args.save_total_limit
+ 50%|████▉     | 25500/51012 [1:09:14<1:18:00,  5.45it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-25500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-25500\config.json
+{'loss': 2.6733, 'learning_rate': 1.0007841292244962e-05, 'epoch': 0.5}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-25500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-25500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-25500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-25500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-24000] due to args.save_total_limit
+ 51%|█████     | 26000/51012 [1:10:38<1:23:32,  4.99it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-26000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-26000\config.json
+{'loss': 2.6665, 'learning_rate': 9.811808986120914e-06, 'epoch': 0.51}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-26000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-26000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-26000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-26000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-24500] due to args.save_total_limit
+ 52%|█████▏    | 26500/51012 [1:11:59<1:23:22,  4.90it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-26500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-26500\config.json
+{'loss': 2.6794, 'learning_rate': 9.615776679996864e-06, 'epoch': 0.52}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-26500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-26500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-26500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-26500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-25000] due to args.save_total_limit
+ 53%|█████▎    | 27000/51012 [1:13:21<1:13:58,  5.41it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-27000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-27000\config.json
+{'loss': 2.666, 'learning_rate': 9.419744373872814e-06, 'epoch': 0.53}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-27000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-27000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-27000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-27000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-25500] due to args.save_total_limit
+ 54%|█████▍    | 27500/51012 [1:14:43<1:11:05,  5.51it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-27500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-27500\config.json
+{'loss': 2.6785, 'learning_rate': 9.223712067748765e-06, 'epoch': 0.54}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-27500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-27500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-27500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-27500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-26000] due to args.save_total_limit
+ 55%|█████▍    | 28000/51012 [1:16:05<1:07:42,  5.66it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-28000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-28000\config.json
+{'loss': 2.6845, 'learning_rate': 9.027679761624717e-06, 'epoch': 0.55}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-28000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-28000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-28000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-28000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-26500] due to args.save_total_limit
+ 56%|█████▌    | 28500/51012 [1:17:28<1:15:48,  4.95it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-28500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-28500\config.json
+{'loss': 2.6738, 'learning_rate': 8.831647455500667e-06, 'epoch': 0.56}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-28500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-28500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-28500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-28500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-27000] due to args.save_total_limit
+ 57%|█████▋    | 29000/51012 [1:18:50<1:11:02,  5.16it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-29000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-29000\config.json
+{'loss': 2.6736, 'learning_rate': 8.635615149376619e-06, 'epoch': 0.57}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-29000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-29000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-29000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-29000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-27500] due to args.save_total_limit
+ 58%|█████▊    | 29500/51012 [1:20:12<1:10:58,  5.05it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-29500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-29500\config.json
+{'loss': 2.6836, 'learning_rate': 8.439582843252568e-06, 'epoch': 0.58}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-29500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-29500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-29500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-29500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-28000] due to args.save_total_limit
+ 59%|█████▉    | 30000/51012 [1:21:35<1:19:15,  4.42it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-30000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-30000\config.json
+{'loss': 2.671, 'learning_rate': 8.24355053712852e-06, 'epoch': 0.59}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-30000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-30000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-30000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-30000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-28500] due to args.save_total_limit
+ 60%|█████▉    | 30500/51012 [1:22:59<1:08:39,  4.98it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-30500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-30500\config.json
+{'loss': 2.6696, 'learning_rate': 8.04751823100447e-06, 'epoch': 0.6}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-30500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-30500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-30500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-30500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-29000] due to args.save_total_limit
+ 61%|██████    | 31000/51012 [1:24:20<1:13:28,  4.54it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-31000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-31000\config.json
+{'loss': 2.6759, 'learning_rate': 7.851485924880422e-06, 'epoch': 0.61}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-31000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-31000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-31000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-31000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-29500] due to args.save_total_limit
+ 62%|██████▏   | 31500/51012 [1:25:42<1:07:58,  4.78it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-31500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-31500\config.json
+{'loss': 2.6644, 'learning_rate': 7.655453618756372e-06, 'epoch': 0.62}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-31500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-31500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-31500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-31500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-30000] due to args.save_total_limit
+ 63%|██████▎   | 32000/51012 [1:27:05<56:39,  5.59it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-32000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-32000\config.json
+{'loss': 2.68, 'learning_rate': 7.4598133772445704e-06, 'epoch': 0.63}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-32000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-32000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-32000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-32000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-30500] due to args.save_total_limit
+ 64%|██████▎   | 32500/51012 [1:28:27<1:02:15,  4.96it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-32500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-32500\config.json
+{'loss': 2.6605, 'learning_rate': 7.263781071120521e-06, 'epoch': 0.64}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-32500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-32500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-32500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-32500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-31000] due to args.save_total_limit
+ 65%|██████▍   | 33000/51012 [1:29:50<1:02:46,  4.78it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-33000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-33000\config.json
+{'loss': 2.6527, 'learning_rate': 7.067748764996472e-06, 'epoch': 0.65}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-33000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-33000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-33000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-33000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-31500] due to args.save_total_limit
+ 66%|██████▌   | 33500/51012 [1:31:13<50:44,  5.75it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-33500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-33500\config.json
+{'loss': 2.6455, 'learning_rate': 6.871716458872423e-06, 'epoch': 0.66}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-33500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-33500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-33500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-33500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-32000] due to args.save_total_limit
+ 67%|██████▋   | 34000/51012 [1:32:34<49:30,  5.73it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-34000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-34000\config.json
+{'loss': 2.6481, 'learning_rate': 6.675684152748374e-06, 'epoch': 0.67}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-34000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-34000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-34000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-34000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-32500] due to args.save_total_limit
+ 68%|██████▊   | 34500/51012 [1:33:55<1:02:09,  4.43it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-34500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-34500\config.json
+{'loss': 2.6577, 'learning_rate': 6.479651846624324e-06, 'epoch': 0.68}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-34500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-34500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-34500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-34500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-33000] due to args.save_total_limit
+ 69%|██████▊   | 35000/51012 [1:35:16<55:21,  4.82it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-35000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-35000\config.json
+{'loss': 2.65, 'learning_rate': 6.284403669724771e-06, 'epoch': 0.69}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-35000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-35000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-35000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-35000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-33500] due to args.save_total_limit
+ 70%|██████▉   | 35500/51012 [1:36:39<53:25,  4.84it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-35500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-35500\config.json
+{'loss': 2.6707, 'learning_rate': 6.088371363600722e-06, 'epoch': 0.7}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-35500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-35500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-35500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-35500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-34000] due to args.save_total_limit
+ 71%|███████   | 36000/51012 [1:38:02<56:18,  4.44it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-36000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-36000\config.json
+{'loss': 2.6444, 'learning_rate': 5.892339057476673e-06, 'epoch': 0.71}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-36000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-36000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-36000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-36000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-34500] due to args.save_total_limit
+ 72%|███████▏  | 36500/51012 [1:39:23<45:09,  5.36it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-36500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-36500\config.json
+{'loss': 2.6736, 'learning_rate': 5.696306751352624e-06, 'epoch': 0.72}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-36500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-36500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-36500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-36500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-35000] due to args.save_total_limit
+ 73%|███████▎  | 37000/51012 [1:40:46<42:44,  5.46it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-37000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-37000\config.json
+{'loss': 2.7103, 'learning_rate': 5.5002744452285736e-06, 'epoch': 0.73}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-37000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-37000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-37000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-37000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-35500] due to args.save_total_limit
+ 74%|███████▎  | 37500/51012 [1:42:09<43:03,  5.23it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-37500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-37500\config.json
+{'loss': 2.6613, 'learning_rate': 5.304242139104525e-06, 'epoch': 0.74}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-37500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-37500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-37500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-37500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-36000] due to args.save_total_limit
+ 74%|███████▍  | 38000/51012 [1:43:32<40:02,  5.42it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-38000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-38000\config.json
+{'loss': 2.6559, 'learning_rate': 5.108209832980475e-06, 'epoch': 0.74}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-38000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-38000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-38000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-38000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-36500] due to args.save_total_limit
+ 75%|███████▌  | 38500/51012 [1:44:55<47:29,  4.39it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-38500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-38500\config.json
+{'loss': 2.6839, 'learning_rate': 4.912177526856427e-06, 'epoch': 0.75}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-38500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-38500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-38500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-38500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-37000] due to args.save_total_limit
+ 76%|███████▋  | 39000/51012 [1:46:18<35:52,  5.58it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-39000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-39000\config.json
+{'loss': 2.6561, 'learning_rate': 4.7161452207323775e-06, 'epoch': 0.76}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-39000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-39000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-39000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-39000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-37500] due to args.save_total_limit
+ 77%|███████▋  | 39500/51012 [1:47:39<37:18,  5.14it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-39500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-39500\config.json
+{'loss': 2.6076, 'learning_rate': 4.520112914608327e-06, 'epoch': 0.77}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-39500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-39500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-39500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-39500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-38000] due to args.save_total_limit
+ 78%|███████▊  | 40000/51012 [1:48:59<39:33,  4.64it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-40000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-40000\config.json
+{'loss': 2.6494, 'learning_rate': 4.324472673096526e-06, 'epoch': 0.78}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-40000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-40000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-40000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-40000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-38500] due to args.save_total_limit
+ 79%|███████▉  | 40500/51012 [1:50:19<33:54,  5.17it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-40500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-40500\config.json
+{'loss': 2.6386, 'learning_rate': 4.128440366972478e-06, 'epoch': 0.79}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-40500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-40500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-40500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-40500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-39000] due to args.save_total_limit
+ 80%|████████  | 41000/51012 [1:51:42<32:55,  5.07it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-41000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-41000\config.json
+{'loss': 2.6437, 'learning_rate': 3.932408060848429e-06, 'epoch': 0.8}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-41000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-41000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-41000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-41000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-39500] due to args.save_total_limit
+ 81%|████████▏ | 41500/51012 [1:53:04<30:29,  5.20it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-41500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-41500\config.json
+{'loss': 2.6593, 'learning_rate': 3.736375754724379e-06, 'epoch': 0.81}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-41500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-41500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-41500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-41500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-40000] due to args.save_total_limit
+ 82%|████████▏ | 42000/51012 [1:54:29<29:47,  5.04it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-42000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-42000\config.json
+{'loss': 2.6627, 'learning_rate': 3.54034344860033e-06, 'epoch': 0.82}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-42000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-42000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-42000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-42000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-40500] due to args.save_total_limit
+ 83%|████████▎ | 42500/51012 [1:55:51<25:55,  5.47it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-42500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-42500\config.json
+{'loss': 2.662, 'learning_rate': 3.3447032070885283e-06, 'epoch': 0.83}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-42500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-42500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-42500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-42500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-41000] due to args.save_total_limit
+ 84%|████████▍ | 43000/51012 [1:57:12<26:58,  4.95it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-43000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-43000\config.json
+{'loss': 2.6272, 'learning_rate': 3.1486709009644795e-06, 'epoch': 0.84}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-43000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-43000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-43000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-43000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-41500] due to args.save_total_limit
+ 85%|████████▌ | 43500/51012 [1:58:34<20:13,  6.19it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-43500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-43500\config.json
+{'loss': 2.6348, 'learning_rate': 2.953030659452678e-06, 'epoch': 0.85}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-43500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-43500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-43500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-43500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-42000] due to args.save_total_limit
+ 86%|████████▋ | 44000/51012 [1:59:57<21:48,  5.36it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-44000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-44000\config.json
+{'loss': 2.6542, 'learning_rate': 2.7569983533286288e-06, 'epoch': 0.86}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-44000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-44000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-44000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-44000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-42500] due to args.save_total_limit
+ 87%|████████▋ | 44500/51012 [2:01:20<24:11,  4.49it/s]  Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-44500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-44500\config.json
+{'loss': 2.6508, 'learning_rate': 2.5609660472045795e-06, 'epoch': 0.87}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-44500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-44500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-44500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-44500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-43000] due to args.save_total_limit
+ 88%|████████▊ | 45000/51012 [2:02:42<20:43,  4.84it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-45000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-45000\config.json
+{'loss': 2.6626, 'learning_rate': 2.3649337410805303e-06, 'epoch': 0.88}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-45000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-45000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-45000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-45000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-43500] due to args.save_total_limit
+ 89%|████████▉ | 45500/51012 [2:04:02<18:57,  4.85it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-45500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-45500\config.json
+{'loss': 2.6481, 'learning_rate': 2.168901434956481e-06, 'epoch': 0.89}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-45500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-45500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-45500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-45500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-44000] due to args.save_total_limit
+ 90%|█████████ | 46000/51012 [2:05:24<17:48,  4.69it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-46000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-46000\config.json
+{'loss': 2.6398, 'learning_rate': 1.972869128832432e-06, 'epoch': 0.9}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-46000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-46000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-46000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-46000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-44500] due to args.save_total_limit
+ 91%|█████████ | 46500/51012 [2:06:46<13:32,  5.55it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-46500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-46500\config.json
+{'loss': 2.6659, 'learning_rate': 1.7768368227083824e-06, 'epoch': 0.91}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-46500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-46500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-46500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-46500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-45000] due to args.save_total_limit
+ 92%|█████████▏| 47000/51012 [2:08:09<12:32,  5.33it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-47000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-47000\config.json
+{'loss': 2.6744, 'learning_rate': 1.5808045165843333e-06, 'epoch': 0.92}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-47000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-47000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-47000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-47000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-45500] due to args.save_total_limit
+ 93%|█████████▎| 47500/51012 [2:09:30<13:13,  4.43it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-47500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-47500\config.json
+{'loss': 2.6362, 'learning_rate': 1.384772210460284e-06, 'epoch': 0.93}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-47500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-47500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-47500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-47500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-46000] due to args.save_total_limit
+ 94%|█████████▍| 48000/51012 [2:10:53<08:23,  5.99it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-48000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-48000\config.json
+{'loss': 2.6385, 'learning_rate': 1.1887399043362347e-06, 'epoch': 0.94}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-48000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-48000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-48000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-48000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-46500] due to args.save_total_limit
+ 95%|█████████▌| 48500/51012 [2:12:17<08:01,  5.22it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-48500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-48500\config.json
+{'loss': 2.6524, 'learning_rate': 9.934917274366815e-07, 'epoch': 0.95}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-48500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-48500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-48500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-48500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-47000] due to args.save_total_limit
+ 96%|█████████▌| 49000/51012 [2:13:40<07:34,  4.43it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-49000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-49000\config.json
+{'loss': 2.671, 'learning_rate': 7.974594213126324e-07, 'epoch': 0.96}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-49000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-49000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-49000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-49000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-47500] due to args.save_total_limit
+ 97%|█████████▋| 49500/51012 [2:15:01<05:17,  4.76it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-49500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-49500\config.json
+{'loss': 2.6525, 'learning_rate': 6.014271151885831e-07, 'epoch': 0.97}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-49500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-49500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-49500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-49500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-48000] due to args.save_total_limit
+ 98%|█████████▊| 50000/51012 [2:16:24<03:03,  5.51it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-50000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-50000\config.json
+{'loss': 2.6308, 'learning_rate': 4.0539480906453383e-07, 'epoch': 0.98}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-50000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-50000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-50000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-50000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-48500] due to args.save_total_limit
+ 99%|█████████▉| 50500/51012 [2:17:48<01:47,  4.77it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-50500
+Configuration saved in t5-small-finetuned-xsum\checkpoint-50500\config.json
+{'loss': 2.6531, 'learning_rate': 2.093625029404846e-07, 'epoch': 0.99}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-50500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-50500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-50500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-50500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-49000] due to args.save_total_limit
+100%|█████████▉| 51000/51012 [2:19:09<00:02,  5.27it/s]Saving model checkpoint to t5-small-finetuned-xsum\checkpoint-51000
+Configuration saved in t5-small-finetuned-xsum\checkpoint-51000\config.json
+{'loss': 2.6494, 'learning_rate': 1.3330196816435348e-08, 'epoch': 1.0}
+Model weights saved in t5-small-finetuned-xsum\checkpoint-51000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-xsum\checkpoint-51000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-xsum\checkpoint-51000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-xsum\checkpoint-51000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-xsum\checkpoint-49500] due to args.save_total_limit
+100%|█████████▉| 51011/51012 [2:19:12<00:00,  5.88it/s]The following columns in the evaluation set  don't have a corresponding argument in `T5ForConditionalGeneration.forward` and have been ignored: id, document, summary. If id, document, summary are not expected by `T5ForConditionalGeneration.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 11332
+  Batch size = 4
+
+100%|██████████| 51012/51012 [2:29:10<00:00,  5.88it/s]
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100%|██████████| 51012/51012 [2:29:10<00:00,  5.70it/s]{'eval_loss': 2.4194087982177734, 'eval_rouge1': 29.0994, 'eval_rouge2': 8.2844, 'eval_rougeL': 22.9664, 'eval_rougeLsum': 22.9694, 'eval_gen_len': 18.8035, 'eval_runtime': 598.5574, 'eval_samples_per_second': 18.932, 'eval_steps_per_second': 4.733, 'epoch': 1.0}
+{'train_runtime': 8954.3415, 'train_samples_per_second': 22.787, 'train_steps_per_second': 5.697, 'train_loss': 2.706679111685013, 'epoch': 1.0}
+
+TrainOutput(global_step=51012, training_loss=2.706679111685013, metrics={'train_runtime': 8954.3415, 'train_samples_per_second': 22.787, 'train_steps_per_second': 5.697, 'train_loss': 2.706679111685013, 'epoch': 1.0})
