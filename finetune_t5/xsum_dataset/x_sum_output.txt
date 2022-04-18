@@ -1,28 +1,3 @@
-4.17.0
-Using custom data configuration default
-Reusing dataset xsum (C:\Users\mishr\.cache\huggingface\datasets\xsum\default\1.2.0\32c23220eadddb1149b16ed2e9430a05293768cfffbdfd151058697d4c11f934)
-100%|██████████| 3/3 [00:00<00:00, 80.06it/s]
-DatasetDict({
-    train: Dataset({
-        features: ['document', 'summary', 'id'],
-        num_rows: 204045
-    })
-    validation: Dataset({
-        features: ['document', 'summary', 'id'],
-        num_rows: 11332
-    })
-    test: Dataset({
-        features: ['document', 'summary', 'id'],
-        num_rows: 11334
-    })
-})
-Loading cached processed dataset at C:\Users\mishr\.cache\huggingface\datasets\xsum\default\1.2.0\32c23220eadddb1149b16ed2e9430a05293768cfffbdfd151058697d4c11f934\cache-3b5f22899b7915a3.arrow
-Loading cached processed dataset at C:\Users\mishr\.cache\huggingface\datasets\xsum\default\1.2.0\32c23220eadddb1149b16ed2e9430a05293768cfffbdfd151058697d4c11f934\cache-8ff3375eef38f280.arrow
-Loading cached processed dataset at C:\Users\mishr\.cache\huggingface\datasets\xsum\default\1.2.0\32c23220eadddb1149b16ed2e9430a05293768cfffbdfd151058697d4c11f934\cache-802327cc9600dbf6.arrow
-Using amp half precision backend
-The following columns in the training set  don't have a corresponding argument in `T5ForConditionalGeneration.forward` and have been ignored: id, document, summary. If id, document, summary are not expected by `T5ForConditionalGeneration.forward`,  you can safely ignore this message.
-C:\Users\mishr\anaconda3\envs\new\lib\site-packages\transformers\optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
-  warnings.warn(
 ***** Running training *****
   Num examples = 204045
   Num Epochs = 1
