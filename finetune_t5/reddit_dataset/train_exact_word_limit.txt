@@ -1,0 +1,404 @@
+***** Running training *****
+  Num examples = 94758
+  Num Epochs = 1
+  Instantaneous batch size per device = 4
+  Total train batch size (w. parallel, distributed & accumulation) = 4
+  Gradient Accumulation steps = 1
+  Total optimization steps = 23690
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+wandb: Currently logged in as: harshm16 (use `wandb login --relogin` to force relogin)
+wandb version 0.12.15 is available! To upgrade, please run: $ pip install wandb --upgrade
+Tracking run with wandb version 0.12.11
+Run data is saved locally in c:\Users\mishr\Desktop\NLP_project\finetune\wandb\run-20220422_210911-15xij4ub
+Syncing run t5-small-finetuned-reddit_5per to Weights & Biases (docs)
+  2%|▏         | 500/23690 [01:15<1:09:44,  5.54it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-500\config.json
+{'loss': 1.817, 'learning_rate': 1.9582102152807094e-05, 'epoch': 0.02}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-2000] due to args.save_total_limit
+  4%|▍         | 1000/23690 [02:29<1:08:34,  5.52it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-1000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-1000\config.json
+{'loss': 0.5913, 'learning_rate': 1.91599831152385e-05, 'epoch': 0.04}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-1000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-1000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-1000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-1000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-2500] due to args.save_total_limit
+  6%|▋         | 1500/23690 [03:42<1:06:45,  5.54it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-1500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-1500\config.json
+{'loss': 0.5603, 'learning_rate': 1.8737864077669906e-05, 'epoch': 0.06}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-1500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-1500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-1500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-1500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-3000] due to args.save_total_limit
+  8%|▊         | 2000/23690 [04:56<1:05:25,  5.52it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-2000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-2000\config.json
+{'loss': 0.5746, 'learning_rate': 1.831574504010131e-05, 'epoch': 0.08}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-2000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-2000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-2000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-2000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-500] due to args.save_total_limit
+ 11%|█         | 2500/23690 [06:09<1:04:01,  5.52it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-2500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-2500\config.json
+{'loss': 0.558, 'learning_rate': 1.7893626002532715e-05, 'epoch': 0.11}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-2500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-2500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-2500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-2500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-1000] due to args.save_total_limit
+ 13%|█▎        | 3000/23690 [07:23<1:02:28,  5.52it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-3000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-3000\config.json
+{'loss': 0.5759, 'learning_rate': 1.747150696496412e-05, 'epoch': 0.13}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-3000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-3000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-3000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-3000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-1500] due to args.save_total_limit
+ 15%|█▍        | 3500/23690 [08:37<1:00:42,  5.54it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-3500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-3500\config.json
+{'loss': 0.5534, 'learning_rate': 1.7049387927395528e-05, 'epoch': 0.15}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-3500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-3500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-3500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-3500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-2000] due to args.save_total_limit
+ 17%|█▋        | 4000/23690 [09:50<59:37,  5.50it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-4000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-4000\config.json
+{'loss': 0.5688, 'learning_rate': 1.6627268889826934e-05, 'epoch': 0.17}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-4000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-4000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-4000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-4000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-2500] due to args.save_total_limit
+ 19%|█▉        | 4500/23690 [11:04<57:34,  5.56it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-4500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-4500\config.json
+{'loss': 0.5707, 'learning_rate': 1.6205149852258337e-05, 'epoch': 0.19}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-4500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-4500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-4500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-4500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-3000] due to args.save_total_limit
+ 21%|██        | 5000/23690 [12:18<56:33,  5.51it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-5000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-5000\config.json
+{'loss': 0.5711, 'learning_rate': 1.5783030814689743e-05, 'epoch': 0.21}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-5000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-5000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-5000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-5000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-3500] due to args.save_total_limit
+ 23%|██▎       | 5500/23690 [13:31<55:25,  5.47it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-5500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-5500\config.json
+{'loss': 0.5612, 'learning_rate': 1.536091177712115e-05, 'epoch': 0.23}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-5500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-5500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-5500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-5500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-4000] due to args.save_total_limit
+ 25%|██▌       | 6000/23690 [14:45<53:41,  5.49it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-6000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-6000\config.json
+{'loss': 0.5429, 'learning_rate': 1.4938792739552555e-05, 'epoch': 0.25}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-6000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-6000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-6000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-6000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-4500] due to args.save_total_limit
+ 27%|██▋       | 6500/23690 [15:59<52:04,  5.50it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-6500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-6500\config.json
+{'loss': 0.5614, 'learning_rate': 1.4516673701983961e-05, 'epoch': 0.27}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-6500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-6500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-6500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-6500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-5000] due to args.save_total_limit
+ 30%|██▉       | 7000/23690 [17:13<51:24,  5.41it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-7000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-7000\config.json
+{'loss': 0.5644, 'learning_rate': 1.4094554664415366e-05, 'epoch': 0.3}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-7000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-7000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-7000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-7000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-5500] due to args.save_total_limit
+ 32%|███▏      | 7500/23690 [18:27<49:44,  5.42it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-7500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-7500\config.json
+{'loss': 0.5598, 'learning_rate': 1.3672435626846772e-05, 'epoch': 0.32}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-7500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-7500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-7500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-7500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-6000] due to args.save_total_limit
+ 34%|███▍      | 8000/23690 [19:40<47:21,  5.52it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-8000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-8000\config.json
+{'loss': 0.5531, 'learning_rate': 1.3250316589278178e-05, 'epoch': 0.34}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-8000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-8000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-8000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-8000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-6500] due to args.save_total_limit
+ 36%|███▌      | 8500/23690 [20:54<45:22,  5.58it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-8500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-8500\config.json
+{'loss': 0.564, 'learning_rate': 1.2828197551709583e-05, 'epoch': 0.36}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-8500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-8500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-8500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-8500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-7000] due to args.save_total_limit
+ 38%|███▊      | 9000/23690 [22:08<45:12,  5.42it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-9000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-9000\config.json
+{'loss': 0.5224, 'learning_rate': 1.2406078514140989e-05, 'epoch': 0.38}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-9000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-9000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-9000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-9000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-7500] due to args.save_total_limit
+ 40%|████      | 9500/23690 [23:22<42:47,  5.53it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-9500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-9500\config.json
+{'loss': 0.5331, 'learning_rate': 1.1983959476572395e-05, 'epoch': 0.4}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-9500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-9500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-9500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-9500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-8000] due to args.save_total_limit
+ 42%|████▏     | 10000/23690 [24:35<41:19,  5.52it/s] Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-10000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-10000\config.json
+{'loss': 0.5588, 'learning_rate': 1.15618404390038e-05, 'epoch': 0.42}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-10000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-10000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-10000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-10000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-8500] due to args.save_total_limit
+ 44%|████▍     | 10500/23690 [25:49<39:35,  5.55it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-10500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-10500\config.json
+{'loss': 0.5652, 'learning_rate': 1.1139721401435206e-05, 'epoch': 0.44}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-10500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-10500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-10500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-10500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-9000] due to args.save_total_limit
+ 46%|████▋     | 11000/23690 [27:03<38:30,  5.49it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-11000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-11000\config.json
+{'loss': 0.5345, 'learning_rate': 1.0718446601941748e-05, 'epoch': 0.46}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-11000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-11000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-11000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-11000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-9500] due to args.save_total_limit
+ 49%|████▊     | 11500/23690 [28:16<36:49,  5.52it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-11500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-11500\config.json
+{'loss': 0.5567, 'learning_rate': 1.0296327564373154e-05, 'epoch': 0.49}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-11500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-11500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-11500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-11500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-10000] due to args.save_total_limit
+ 51%|█████     | 12000/23690 [29:30<35:02,  5.56it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-12000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-12000\config.json
+{'loss': 0.5488, 'learning_rate': 9.87420852680456e-06, 'epoch': 0.51}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-12000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-12000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-12000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-12000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-10500] due to args.save_total_limit
+ 53%|█████▎    | 12500/23690 [30:44<34:01,  5.48it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-12500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-12500\config.json
+{'loss': 0.5496, 'learning_rate': 9.452089489235965e-06, 'epoch': 0.53}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-12500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-12500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-12500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-12500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-11000] due to args.save_total_limit
+ 55%|█████▍    | 13000/23690 [31:57<32:17,  5.52it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-13000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-13000\config.json
+{'loss': 0.5548, 'learning_rate': 9.029970451667371e-06, 'epoch': 0.55}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-13000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-13000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-13000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-13000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-11500] due to args.save_total_limit
+ 57%|█████▋    | 13500/23690 [33:11<30:34,  5.55it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-13500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-13500\config.json
+{'loss': 0.56, 'learning_rate': 8.607851414098777e-06, 'epoch': 0.57}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-13500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-13500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-13500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-13500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-12000] due to args.save_total_limit
+ 59%|█████▉    | 14000/23690 [34:24<29:09,  5.54it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-14000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-14000\config.json
+{'loss': 0.5504, 'learning_rate': 8.185732376530182e-06, 'epoch': 0.59}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-14000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-14000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-14000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-14000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-12500] due to args.save_total_limit
+ 61%|██████    | 14500/23690 [35:38<27:31,  5.56it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-14500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-14500\config.json
+{'loss': 0.5411, 'learning_rate': 7.763613338961588e-06, 'epoch': 0.61}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-14500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-14500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-14500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-14500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-13000] due to args.save_total_limit
+ 63%|██████▎   | 15000/23690 [36:51<26:08,  5.54it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-15000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-15000\config.json
+{'loss': 0.5453, 'learning_rate': 7.34233853946813e-06, 'epoch': 0.63}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-15000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-15000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-15000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-15000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-13500] due to args.save_total_limit
+ 65%|██████▌   | 15500/23690 [38:05<24:46,  5.51it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-15500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-15500\config.json
+{'loss': 0.5534, 'learning_rate': 6.920219501899537e-06, 'epoch': 0.65}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-15500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-15500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-15500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-15500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-14000] due to args.save_total_limit
+ 68%|██████▊   | 16000/23690 [39:18<23:15,  5.51it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-16000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-16000\config.json
+{'loss': 0.5433, 'learning_rate': 6.498100464330942e-06, 'epoch': 0.68}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-16000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-16000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-16000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-16000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-14500] due to args.save_total_limit
+ 70%|██████▉   | 16500/23690 [40:31<21:43,  5.52it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-16500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-16500\config.json
+{'loss': 0.5537, 'learning_rate': 6.0759814267623475e-06, 'epoch': 0.7}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-16500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-16500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-16500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-16500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-15000] due to args.save_total_limit
+ 72%|███████▏  | 17000/23690 [41:45<20:11,  5.52it/s]  Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-17000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-17000\config.json
+{'loss': 0.538, 'learning_rate': 5.65470662726889e-06, 'epoch': 0.72}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-17000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-17000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-17000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-17000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-15500] due to args.save_total_limit
+ 74%|███████▍  | 17500/23690 [42:59<18:47,  5.49it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-17500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-17500\config.json
+{'loss': 0.5465, 'learning_rate': 5.232587589700297e-06, 'epoch': 0.74}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-17500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-17500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-17500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-17500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-16000] due to args.save_total_limit
+ 76%|███████▌  | 18000/23690 [44:12<17:01,  5.57it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-18000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-18000\config.json
+{'loss': 0.5595, 'learning_rate': 4.810468552131701e-06, 'epoch': 0.76}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-18000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-18000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-18000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-18000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-16500] due to args.save_total_limit
+ 78%|███████▊  | 18500/23690 [45:26<15:35,  5.55it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-18500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-18500\config.json
+{'loss': 0.5466, 'learning_rate': 4.388349514563107e-06, 'epoch': 0.78}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-18500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-18500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-18500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-18500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-17000] due to args.save_total_limit
+ 80%|████████  | 19000/23690 [46:39<14:07,  5.54it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-19000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-19000\config.json
+{'loss': 0.5413, 'learning_rate': 3.96707471506965e-06, 'epoch': 0.8}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-19000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-19000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-19000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-19000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-17500] due to args.save_total_limit
+ 82%|████████▏ | 19500/23690 [47:52<12:32,  5.57it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-19500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-19500\config.json
+{'loss': 0.5582, 'learning_rate': 3.5449556775010556e-06, 'epoch': 0.82}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-19500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-19500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-19500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-19500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-18000] due to args.save_total_limit
+ 84%|████████▍ | 20000/23690 [49:05<11:09,  5.51it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-20000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-20000\config.json
+{'loss': 0.5573, 'learning_rate': 3.1228366399324613e-06, 'epoch': 0.84}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-20000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-20000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-20000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-20000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-18500] due to args.save_total_limit
+ 87%|████████▋ | 20500/23690 [50:19<09:34,  5.55it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-20500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-20500\config.json
+{'loss': 0.5639, 'learning_rate': 2.700717602363867e-06, 'epoch': 0.87}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-20500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-20500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-20500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-20500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-19000] due to args.save_total_limit
+ 89%|████████▊ | 21000/23690 [51:32<08:06,  5.53it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-21000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-21000\config.json
+{'loss': 0.5635, 'learning_rate': 2.2794428028704096e-06, 'epoch': 0.89}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-21000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-21000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-21000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-21000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-19500] due to args.save_total_limit
+ 91%|█████████ | 21500/23690 [52:45<06:35,  5.53it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-21500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-21500\config.json
+{'loss': 0.5476, 'learning_rate': 1.8573237653018153e-06, 'epoch': 0.91}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-21500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-21500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-21500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-21500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-20000] due to args.save_total_limit
+ 93%|█████████▎| 22000/23690 [53:59<05:04,  5.55it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-22000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-22000\config.json
+{'loss': 0.5554, 'learning_rate': 1.4352047277332209e-06, 'epoch': 0.93}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-22000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-22000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-22000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-22000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-20500] due to args.save_total_limit
+ 95%|█████████▍| 22500/23690 [55:12<03:33,  5.57it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-22500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-22500\config.json
+{'loss': 0.5639, 'learning_rate': 1.0130856901646264e-06, 'epoch': 0.95}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-22500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-22500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-22500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-22500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-21000] due to args.save_total_limit
+ 97%|█████████▋| 23000/23690 [56:25<02:03,  5.57it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-23000
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-23000\config.json
+{'loss': 0.5367, 'learning_rate': 5.918108906711693e-07, 'epoch': 0.97}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-23000\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-23000\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-23000\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-23000\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-21500] due to args.save_total_limit
+ 99%|█████████▉| 23500/23690 [57:38<00:34,  5.51it/s]Saving model checkpoint to t5-small-finetuned-reddit_5per\checkpoint-23500
+Configuration saved in t5-small-finetuned-reddit_5per\checkpoint-23500\config.json
+{'loss': 0.533, 'learning_rate': 1.6969185310257493e-07, 'epoch': 0.99}
+Model weights saved in t5-small-finetuned-reddit_5per\checkpoint-23500\pytorch_model.bin
+tokenizer config file saved in t5-small-finetuned-reddit_5per\checkpoint-23500\tokenizer_config.json
+Special tokens file saved in t5-small-finetuned-reddit_5per\checkpoint-23500\special_tokens_map.json
+Copy vocab file to t5-small-finetuned-reddit_5per\checkpoint-23500\spiece.model
+Deleting older checkpoint [t5-small-finetuned-reddit_5per\checkpoint-22000] due to args.save_total_limit
+100%|██████████| 23690/23690 [58:06<00:00,  7.60it/s]The following columns in the evaluation set  don't have a corresponding argument in `T5ForConditionalGeneration.forward` and have been ignored: content, summary. If content, summary are not expected by `T5ForConditionalGeneration.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 10529
+  Batch size = 4
+                                                     
+100%|██████████| 23690/23690 [1:06:00<00:00,  7.60it/s]
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100%|██████████| 23690/23690 [1:06:00<00:00,  5.98it/s]{'eval_loss': 0.5264926552772522, 'eval_rouge1': 15.8429, 'eval_rouge2': 3.0465, 'eval_rougeL': 13.1477, 'eval_rougeLsum': 13.7689, 'eval_gen_len': 18.3304, 'eval_runtime': 474.0713, 'eval_samples_per_second': 22.21, 'eval_steps_per_second': 5.554, 'epoch': 1.0}
+{'train_runtime': 3965.2307, 'train_samples_per_second': 23.897, 'train_steps_per_second': 5.974, 'train_loss': 0.581145949100029, 'epoch': 1.0}
+
+TrainOutput(global_step=23690, training_loss=0.581145949100029, metrics={'train_runtime': 3965.2307, 'train_samples_per_second': 23.897, 'train_steps_per_second': 5.974, 'train_loss': 0.581145949100029, 'epoch': 1.0})
