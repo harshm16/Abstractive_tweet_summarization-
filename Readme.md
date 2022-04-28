@@ -4,4 +4,4 @@
 
 <h3 align="left"> <b> You can read the complete details of the project in the Documentation as well a the Report file.</b> </h3>
 
-<h4 align="left"> <b> In case the pre-trained model has issues loading, it can also be found and downloaded from HuggingFace: [https://huggingface.co/harshm16/t5-small-finetuned-reddit_dataset] and [https://huggingface.co/harshm16/t5-small-finetuned-xsum] respectively. </b> </h4>
+<h4 align="left"> <b> The pre-trained models can be downloaded from HuggingFace: [https://huggingface.co/harshm16/t5-small-finetuned-reddit_dataset] and [https://huggingface.co/harshm16/t5-small-finetuned-xsum] respectively. </b> </h4>
